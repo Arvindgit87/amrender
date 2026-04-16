@@ -1,0 +1,20 @@
+
+
+name: Docker Build & Push
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+     
+      - name: PowerShell Hello World
+ 
+        uses: rajbos/actions-testing@v0.0.1
+          
